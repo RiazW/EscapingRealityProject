@@ -10,8 +10,14 @@
   <body>
     <a-scene>
         <!-- <a-plane color="brown" position="0 0 -5" rotation="-90 0 0" width="50" height="50"></a-plane> -->
-        <a-entity environment="preset: osiris; skyColor: #88c;"></a-entity>
-      
+        <!-- <a-entity environment="preset: osiris; skyColor: #88c;"></a-entity> -->
+         <assets>
+           <a-asset-item id="city" src="City.glb" ></a-asset-item>
+          </assets>
+
+           <a-gltf-model  src="#city" position="0 0 -5" animation-mixer scale="0.1 0.1 0.1"></a-gltf-model>
+            <a-camera position="0 5 0">
+
 
     </a-scene>
   </body>
